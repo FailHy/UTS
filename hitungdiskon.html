@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Pake JSHT untuk proses nya ygy -->
+    <meta name="author" content="Fail Hylmi Khalil" />
+    <title>UTS Web</title>
+    <script>
+      var totalbelanja = prompt("Input total belanja = ");
+      document.writeln("total belanja anda = " + totalbelanja + "<br>");
+      if (totalbelanja >= 100000) {
+        var diskon = 0.05 * totalbelanja;
+        document.writeln("Diskon yang didapatkan = " + diskon + "<br>");
+      } else if (totalbelanja >= 500000) {
+        var diskon = 0.1 * totalbelanja;
+        document.writeln("Diskon yang didapatkan = " + diskon + "<br>");
+      } else {
+        document.writeln("Anda tidak mendapatkan diskon" + "<br>");
+        var diskon = 0;
+      }
+
+      var akhir = totalbelanja - diskon;
+      document.writeln("total belanja anda setelah diskon : " + akhir + "<br>");
+    </script>
+  </head>
+  <body>
+    <button class="btn btn-primary"><a href="index.html">Home</a></button>
+  </body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="author" content="Fail Hylmi Khalil" />
+    <title>UTS Web</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Layout Utama */
+      .main-layout {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      /* Konten Utama */
+      .content {
+        flex: 1;
+        padding: 20px;
+      }
+
+      /* Sidebar */
+      .sidebar-right {
+        width: 25%;
+        background-color: #fabc3f;
+        color: white;
+        padding: 20px;
+      }
+
+      /* Header */
+      .header {
+        background-color: #343a40;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+
+      /* Footer */
+      .footer {
+        background-color: #343a40;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        width: 100%;
+        margin-top: auto;
+      }
+
+      /* Link dalam sidebar */
+      .link a {
+        color: white;
+        text-decoration: none;
+      }
+
+      .link a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <h2>Profil</h2>
+    </div>
+    <!-- Header End -->
+
+    <!-- Main Layout -->
+    <div class="main-layout">
+      <div class="content">
+        <h1>Form Mahasiswa</h1>
+
+        <form>
+          <fieldset class="border p-3">
+            <div class="mb-3 row">
+              <label for="Nama" class="col-sm-2 col-form-label">Nama</label>
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="Nama"
+                  id="Nama"
+                  placeholder="Nama"
+                />
+              </div>
+            </div>
+
+            <div class="mb-3 row">
+              <label for="NoBP" class="col-sm-2 col-form-label">NoBP</label>
+              <div class="col-sm-10">
+                <input
+                  type="number"
+                  class="form-control"
+                  name="NoBP"
+                  id="NoBP"
+                  placeholder="NoBP"
+                />
+              </div>
+            </div>
+
+            <div class="mb-3 row">
+              <label for="date" class="col-sm-2 col-form-label"
+                >Tanggal Lahir</label
+              >
+              <div class="col-sm-10">
+                <input type="date" class="form-control" name="date" id="date" />
+              </div>
+            </div>
+
+            <div class="mb-3 row">
+              <label for="jekel" class="col-sm-2 col-form-label"
+                >Jenis Kelamin</label
+              >
+              <div class="col-sm-10">
+                <input type="radio" name="jekel" value="man" /> lelaki
+                <input type="radio" name="jekel" value="woman" /> perempuan
+              </div>
+            </div>
+
+            <div class="mb-3 row">
+              <label for="hobi" class="col-sm-2 col-form-label">Hobi</label>
+              <div class="col-sm-10">
+                <input type="checkbox" name="hobi" value="turu" /> Listening
+                Music <input type="checkbox" name="hobi" value="makan" /> Makan
+              </div>
+            </div>
+
+            <div class="mb-3 row">
+              <label for="alamat" class="col-sm-2 col-form-label"
+                >Alamat Lengkap</label
+              >
+              <div class="col-sm-10">
+                <textarea class="form-control" name="alamat"></textarea>
+              </div>
+            </div>
+
+            <div class="mb-3 row">
+              <div class="col-sm-10">
+                <input type="submit" class="btn btn-primary" value="Submit" />
+              </div>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+
+      <!-- Sidebar Kanan -->
+      <div class="sidebar-right">
+        <h3>Dashboard</h3>
+        <nav class="link">
+          <a href="index.html">Homepage</a><br /><br />
+          <a class="active" href="profil.html" target="_blank">Profil</a><br />
+          <a href="mahasiswa.html" target="_blank">Mahasiswa</a><br />
+          <a href="hitungdiskon.html" target="_blank">Hitung Diskon</a><br />
+          <a href="datadosen.html" target="_blank">Data Dosen</a><br />
+        </nav>
+      </div>
+      <!-- Sidebar End -->
+    </div>
+    <!-- Main Layout End -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <h5>Copyright by Fail Hylmi Khalil</h5>
+    </footer>
+    <!-- Footer End -->
+  </body>
+</html>
